@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Banco</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="url_register">http://10.51.1.7:8080/user/register</string>
+    <string name="url_login">http://10.51.1.7:8080/user/login</string>
+    <string name="url_withdrawals">http://10.51.1.7:8080/transaction/codeRetirement</string>
+</resources>
