@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph_home">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/homeFragment">
 
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jonathan.bankapp.view.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_withdrawalsFragment"
+            app:destination="@id/withdrawalsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_transferFragment"
+            app:destination="@id/transferFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_payWithQRFragment"
+            app:destination="@id/payWithQRFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/withdrawalsFragment"
+        android:name="com.jonathan.bankapp.view.fragments.WithdrawalsFragment"
+        android:label="fragment_withdrawals"
+        tools:layout="@layout/fragment_withdrawals" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.jonathan.bankapp.view.fragments.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/transferFragment"
+        android:name="com.jonathan.bankapp.view.fragments.TransferFragment"
+        android:label="fragment_transfer"
+        tools:layout="@layout/fragment_transfer" />
+    <fragment
+        android:id="@+id/payWithQRFragment"
+        android:name="com.jonathan.bankapp.view.fragments.PayWithQRFragment"
+        android:label="fragment_pay_with_q_r"
+        tools:layout="@layout/fragment_pay_with_q_r" />
 </navigation>

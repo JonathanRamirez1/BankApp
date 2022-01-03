@@ -1,9 +1,26 @@
 <resources>
-    <string name="app_name">Banco</string>
+    <string name="app_name">BankApp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="url_register">http://10.51.1.7:8080/user/register</string>
-    <string name="url_login">http://10.51.1.7:8080/user/login</string>
-    <string name="url_withdrawals">http://10.51.1.7:8080/transaction/codeRetirement</string>
+    //WPOSS
+    <string name="url_register_wposs">http://192.168.101.8:8080/user/register</string>
+    <string name="url_login_wposs">http://10.51.1.7:8080/user/login</string>
+    <string name="url_code_withdrawals_wposs">http://10.51.1.7:8080/transaction/codeRetirement</string>
+    <string name="url_withdrawals_wposs">http://10.51.1.7:8080/transaction/retirement</string>
+    <string name="url_qr_code_wposs">http://10.51.1.7:8080/QR/createCommonQRCode</string>
+    <string name="url_transfer_wposs">http://10.51.1.7:8080/transaction/transfer</string>
+    <string name="url_get_transfer_wposs">http://10.51.1.7:8080/transaction/getTransfers</string>
+
+    //HOME
+    <string name="url_register_home">http://192.168.101.8:8080/user/register</string>
+    <string name="url_login_home">http://192.168.101.8:8080/user/login</string>
+    <string name="url_code_withdrawals_home">http://192.168.101.8:8080/transaction/codeRetirement</string>
+    <string name="url_withdrawals_home">http://192.168.101.8:8080/transaction/retirement</string>
+    <string name="url_qr_code_home">http://192.168.101.8:8080/QR/createCommonQRCode</string>
+    <string name="url_transfer_home">http://192.168.101.8:8080/transaction/transfer</string>
+    <string name="url_get_transfer_home">http://192.168.101.8:8080/transaction/getTransfers</string>
+
+    <string name="wait_moment">Espera un momento por favor</string>
+
 </resources>

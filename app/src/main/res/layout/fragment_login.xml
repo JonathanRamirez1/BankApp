@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.fragments.LoginFragment">
 
@@ -26,6 +27,8 @@
                 android:id="@+id/textInputEditTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:background="@color/colorPrimaryDark"
                 android:hint="Correo Electronico"
                 android:inputType="textEmailAddress" />
 
@@ -43,6 +46,8 @@
                 android:id="@+id/textInputEditTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:background="@color/colorPrimaryDark"
                 android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
                 android:hint="Contraseña"
                 android:inputType="textPassword" />
@@ -55,20 +60,23 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
             android:gravity="center"
             android:text="Login"
-            android:textColor="@color/white" />
+            android:textColor="@color/text_color" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/materialButtonRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
             android:gravity="center"
             android:text="Register"
-            android:textColor="@color/white" />
+            android:textColor="@color/text_color" />
 
     </LinearLayout>
 

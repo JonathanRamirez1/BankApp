@@ -40,19 +40,40 @@
             android:layout_marginTop="20dp"
             android:text="Generar Codigo" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextViewTitleTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp">
+            android:layout_marginEnd="20dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="6">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputEditTextConfirmCode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Codigo de Retiro"
-                android:inputType="textEmailAddress" />
+                android:inputType="number"
+                android:maxLength="6" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -61,14 +82,17 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp">
+            android:layout_marginEnd="20dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="7">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textInputEditTextEmail"
+                android:id="@+id/textInputEditTextAmount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Monto a retirar"
-                android:inputType="textEmailAddress" />
+                android:inputType="number"
+                android:maxLength="7" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
