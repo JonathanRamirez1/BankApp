@@ -4,17 +4,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
-
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -24,10 +21,8 @@ import com.google.zxing.integration.android.IntentResult;
 import com.jonathan.bankapp.R;
 import com.jonathan.bankapp.data.repository.CustomRequest;
 import com.jonathan.bankapp.databinding.FragmentTransferBinding;
-
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -87,8 +82,8 @@ public class TransferFragment extends Fragment {
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/json");
 
-        String accountDestiny = String.valueOf(binding.textViewAccount.getText());
-        String amountDestiny = String.valueOf(binding.EditTextAmount.getText());
+        String accountDestiny = String.valueOf(binding.textInputEditTextViewAccount.getText());
+        String amountDestiny = String.valueOf(binding.textInputEditTextViewAmount.getText());
 
       //  sharedPreferences = getActivity().getSharedPreferences("Data", Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
@@ -135,7 +130,7 @@ public class TransferFragment extends Fragment {
             if (intentResult.getContents() == null) {
                 Toast.makeText(getActivity(), "Se cancelo el scan", Toast.LENGTH_SHORT).show();
             } else {
-                    binding.textViewAccount.setText(intentResult.getContents());
+                    binding.textInputEditTextViewAccount.setText(intentResult.getContents());
             }
         } else {
             super.onActivityResult(requestCode, resultCode, data);
